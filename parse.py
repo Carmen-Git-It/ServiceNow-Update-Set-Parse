@@ -71,7 +71,7 @@ for update in root.findall('.//sys_update_xml'):
 
         display_name = update.findtext('target_name')
 
-        column_label = update.findtext('.//column_label')
+        column_label = inner_root.findtext('.//column_label')
         if column_label:
             display_name = column_label
 
